@@ -1,6 +1,5 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import React from 'react'
 import './index.css'
 import { RouterProvider } from 'react-router-dom';
 import { createBrowserRouter } from 'react-router-dom'
@@ -11,12 +10,12 @@ import Contact from './components/Contact/Contact.jsx'
 const router=createBrowserRouter([
 
   {
-    path:'/',
+    path:"/",
     element:<Layout/>,
     children: [
 
       {
-        path:"",
+        path: "",
         element:<Home/>
       },
       {
