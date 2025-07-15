@@ -1,6 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
+import Github from './components/Github/Github.jsx'
 import { RouterProvider } from 'react-router-dom';
 import { createBrowserRouter } from 'react-router-dom'
 import Home from './components/Home/Home.jsx'
@@ -25,6 +26,10 @@ const router=createBrowserRouter([
       {
         path:"contact",
         element:<Contact/>
+      },
+       {
+        path:"github",
+        element:<Github/>
       }
     ]
   }
