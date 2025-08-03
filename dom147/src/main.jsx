@@ -8,6 +8,7 @@ import Home from './components/Home/Home.jsx'
 import Layout from './Layout.jsx'
 import About from './components/About/About.jsx'
 import Contact from './components/Contact/Contact.jsx'
+import Api from './components/api/Api.jsx';
 const router=createBrowserRouter([
 
   {
@@ -30,6 +31,10 @@ const router=createBrowserRouter([
        {
         path:"github",
         element:<Github/>
+      },
+      {
+        path:"api",
+        element:<Api/>
       }
     ]
   }
